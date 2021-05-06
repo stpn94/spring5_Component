@@ -1,7 +1,10 @@
 package spring5_Component.spring;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
 //암호 변경 기능
 public class ChangePasswordService {
-	
+	@Autowired
 	private MemberDao memberDao;
 	
 	//암호 변경
@@ -16,8 +19,5 @@ public class ChangePasswordService {
 		memberDao.update(member);
 	}
 
-	public void setMemberDao(MemberDao memberDao) {
-		this.memberDao = memberDao;
-	}
 
 }

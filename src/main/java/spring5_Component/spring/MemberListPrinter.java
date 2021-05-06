@@ -2,8 +2,10 @@ package spring5_Component.spring;
 
 import java.util.Collection;
 
-public class MemberListPrinter {
+import org.springframework.beans.factory.annotation.Autowired;
 
+public class MemberListPrinter {
+	@Autowired
 	private MemberDao memberDao;
 	private MemberPrinter printer;
 

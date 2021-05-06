@@ -27,7 +27,7 @@ public class AppCtx {
 	@Bean
 	public ChangePasswordService changePwdSvc() {
 		ChangePasswordService pwdSvc = new ChangePasswordService();
-		pwdSvc.setMemberDao(memberDao());
+//		pwdSvc.setMemberDao(memberDao());
 		return pwdSvc;
 	}
 	
@@ -44,16 +44,16 @@ public class AppCtx {
 	@Bean
 	public MemberInfoPrinter infoPrinter() {
 		MemberInfoPrinter infoPrinter = new MemberInfoPrinter();
-		infoPrinter.setMemberDao(memberDao());
-		infoPrinter.setPrinter(memberPrinter());
+//		infoPrinter.setMemberDao(memberDao());
+//		infoPrinter.setPrinter(memberPrinter());
 		return infoPrinter;
 	}
 	
 	@Bean
 	public VersionPrinter versionPrinter() {
 		VersionPrinter versionPrinter = new VersionPrinter();
-		versionPrinter.setMajorVersion(5);
-		versionPrinter.setMinorVersion(0);
+//		versionPrinter.setMajorVersion(5);
+//		versionPrinter.setMinorVersion(0);
 		return versionPrinter;
 	}
 }

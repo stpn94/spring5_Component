@@ -1,7 +1,9 @@
 package spring5_Component.spring;
 
-public class MemberInfoPrinter {
+import org.springframework.beans.factory.annotation.Autowired;
 
+public class MemberInfoPrinter {
+	@Autowired
 	private MemberDao memDao;
 	private MemberPrinter printer;
 
@@ -15,12 +17,5 @@ public class MemberInfoPrinter {
 		System.out.println();
 	}
 
-	public void setMemberDao(MemberDao memberDao) {
-		this.memDao = memberDao;
-	}
-
-	public void setPrinter(MemberPrinter printer) {
-		this.printer = printer;
-	}
 
 }
