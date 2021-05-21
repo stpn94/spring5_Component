@@ -1,7 +1,10 @@
 package spring5_Component.spring;
 
 import java.time.LocalDateTime;
+
+import org.springframework.stereotype.Service;
 //멤버 등록 서비스
+@Service
 public class MemberRegisterService {
 	private MemberDao memberDao;
 	

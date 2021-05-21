@@ -1,8 +1,10 @@
 package spring5_Component.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 //암호 변경 기능
+@Service
 public class ChangePasswordService {
 	@Autowired
 	private MemberDao memberDao;

@@ -1,5 +1,8 @@
 package spring5_Component.spring;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MemberPrinter {
 
 	public void print(Member member) {
